@@ -16,8 +16,8 @@
         "payment/saferpay": "master"
     },
     "autoload": {
-        "psr-0": { "Payment\\Saferpay\\Http": "" }
+        "psr-0": { "Payment\\Saferpay\\Http\\Client": "" }
     },
-    "target-dir": "Payment/Saferpay/Http",
+    "target-dir": "Payment/Saferpay/Http/Client",
     "minimum-stability": "dev"
 }
