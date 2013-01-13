@@ -16,8 +16,8 @@
         "payment/saferpay": "master"
     },
     "autoload": {
-        "psr-0": { "Payment\\Saferpay\\Guzzle": "" }
+        "psr-0": { "Payment\\Saferpay\\Http": "" }
     },
-    "target-dir": "Payment/Saferpay/Guzzle",
+    "target-dir": "Payment/Saferpay/Http",
     "minimum-stability": "dev"
 }
