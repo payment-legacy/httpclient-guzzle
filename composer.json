@@ -12,7 +12,8 @@
     ],
     "require": {
         "php": ">=5.3.3",
-        "guzzle/guzzle": "3.0.7"
+        "guzzle/guzzle": "3.0.7",
+        "payment/saferpay": "master"
     },
     "autoload": {
         "psr-0": { "Payment\\Saferpay\\Guzzle": "" }
