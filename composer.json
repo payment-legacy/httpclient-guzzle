@@ -1,0 +1,22 @@
+{
+    "name": "payment/saferpay-guzzle",
+    "type": "library",
+    "description": "Saferpay payment service library - guzzle",
+    "keywords": ["saferpay", "payment", "e-commerce", "guzzle"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Dominik Zogg",
+            "email": "dominik.zogg@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.3",
+        "guzzle/guzzle": "3.0.7"
+    },
+    "autoload": {
+        "psr-0": { "Payment\\Saferpay\\Guzzle": "" }
+    },
+    "target-dir": "Payment/Saferpay/Guzzle",
+    "minimum-stability": "dev"
+}
