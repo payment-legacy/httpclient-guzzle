@@ -1,6 +1,6 @@
 <?php
 
-namespace Payment\Saferpay\Http\Client;
+namespace Payment\HttpClient;
 
 use Guzzle\Http\Client;
 
@@ -45,7 +45,7 @@ class GuzzleClient implements HttpClientInterface
         {
             $originalResponse = $this->getClient()->createRequest($method, $url, $headers, $content)->send();
 
-            return new Response(
+            return new NullResponse(
                 $originalResponse->getStatusCode(),
                 $originalResponse->getContentType(),
                 $originalResponse->getBody(true),
