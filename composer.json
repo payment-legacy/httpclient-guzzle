@@ -16,7 +16,7 @@
         "guzzle/guzzle": "3.0.*"
     },
     "provide": {
-        "payment/httpclient-implementation": "dev-master"
+        "payment/httpclient-implementation": "self.version"
     },
     "autoload": {
         "psr-0": { "Payment\\HttpClient": "" }
