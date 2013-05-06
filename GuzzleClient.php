@@ -43,7 +43,13 @@ class GuzzleClient implements HttpClientInterface
     {
         try
         {
-            $originalResponse = $this->getClient()->createRequest($method, $url, $headers, $content)->send();
+            $originalRequest = $this->getClient()->createRequest($method, $url, $headers, $content);
+
+            if($method == HttpClientInterface::METHOD_POST && !array_key_exists('Content-Type', $headers)) {
+                $originalRequest->setHeader('Content-Type', 'application/x-www-form-urlencoded');
+            }
+
+            $originalResponse = $originalRequest->send();
 
             return new NullResponse(
                 $originalResponse->getStatusCode(),
